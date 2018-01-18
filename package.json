@@ -6,6 +6,10 @@
   "repository": "git@github.com:WPitak/custom-error-factory.git",
   "author": "WPitak <w.pitaknitinun@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest \"(?!(node_modules/)).*\\.test\\.js$\"",
+    "test:watch": "jest \"(?!(node_modules/)).*\\.test\\.js$\" --watch"
+  },
   "devDependencies": {
     "jest": "^22.1.2"
   }
