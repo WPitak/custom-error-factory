@@ -15,7 +15,7 @@ module.exports = function factory (subErrorName, options = {}) {
   assert(subErrorName, 'Subtype name for new error is required')
 
   // Base error
-  const BaseError = options.BaseError || Error
+  const BaseError = options.baseError || Error
   const baseInstance = new BaseError()
 
   const SubErrorType = function SubErrorType (message, extra) {

@@ -10,7 +10,7 @@ describe('custom error factory', () => {
   })
   it('accepts base error constructor to be inherited from', () => {
     const AError = factory('AError')
-    const BError = factory('BError', { BaseError: AError })
+    const BError = factory('BError', { baseError: AError })
     const aError = new AError()
     const bError = new BError()
     expect(bError).toBeInstanceOf(Error)
@@ -44,7 +44,7 @@ describe('error constructor', () => {
     expect(a.code).toBe(code)
     expect(a.message).toBe(defaultMessage)
 
-    const BError = factory('BError', { BaseError: AError })
+    const BError = factory('BError', { baseError: AError })
     const b = new BError()
     expect(b.code).toBe(code)
     expect(b.message).toBe(defaultMessage)
