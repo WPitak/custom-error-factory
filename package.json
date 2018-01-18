@@ -1,0 +1,9 @@
+{
+  "name": "custom-error-factory",
+  "version": "1.0.0",
+  "description": "Create custom Error class",
+  "main": "index.js",
+  "repository": "git@github.com:WPitak/custom-error-factory.git",
+  "author": "WPitak <w.pitaknitinun@gmail.com>",
+  "license": "MIT"
+}
