@@ -5,7 +5,7 @@ const assert = require('assert')
  * Create constructor for new error type
  * @param {string} subErrorName - name of new error type
  * @param {object} options
- * @param {function} options.BaseError - base constructor to inherit from
+ * @param {function} options.baseError - base constructor to inherit from
  * @param {any} options.code - error code
  * @param {string} options.defaultMessage - default message for newly created error
  * @return {function} constructor for new error type
